@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*{
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.card-container{
+  padding: 10px;
+  box-shadow: 4px 3px 3px #aaaaaa;
+  display: inline-block;
+    background-color: whitesmoke;
+    margin: 10px;
+    width: 45%;
+
+}
+.card-container label{
+  font-size: 18px;
+}
+
+.card-details{
+  display: inline-block;
+  float: right;
+  width: 62%;
+}
+ul{
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+.card-details span{
+  color: chocolate;
+  font-size: 15px;
+}
+.img {
+  border-radius: 7px;
+  width: 35%;
+  height: 225px;
+}
+.header{
+  background-color: whitesmoke;
+  height: auto;
+  padding: 1%;
+  text-align: center;
+}
+h1{
+  font-size: 50px;
+}
+li{
+  list-style: none;
+  display: inline-block;
+  margin: 1%;
+  color: chocolate;
+  font-size: 20px;
+  cursor: pointer;
+}
+.post-box, .user-box , .posts-container , .users-container{
+  text-align: center;
+}
+.post, .user , .posts-list , .users-list {
+  display: inline-block;
+  width: 50%;
+  background-color: whitesmoke;
+  height: auto;
+  padding: 1%;
+  margin-top: 2%;
+  text-align: justify;
+  box-shadow: 4px 3px 3px #aaaaaa;
+
+}
+.post span , .user span, .posts-container span, .users-container span{
+  color: chocolate;
+  font-size: 19px;
+}
+
