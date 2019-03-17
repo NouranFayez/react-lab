@@ -23,6 +23,6 @@ export default class DisplayUserPost extends React.Component{
         });
     }
     render(){
-        return this.state.userpost.map(p => <UserPost key={p.id} userId={p.userId} body={p.body} title={p.title} />)
+        return this.state.userpost.map(p => <UserPost key={p.id} id={p.userId} body={p.body} title={p.title} />)
     }
 }
