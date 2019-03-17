@@ -24,7 +24,7 @@ export default class AddPost extends React.Component {
       body: String,
       userId: SimpleSchema.Integer,
     }).newContext();
-    validationContext.validate({ title, body, userId: +userId });
+    validationContext.validate({ title, userId: +userId });
     if (validationContext.isValid()) {
       axios.post('https://jsonplaceholder.typicode.com/posts', { title, body, userId: +userId })
         .then((response) => {
@@ -37,7 +37,7 @@ export default class AddPost extends React.Component {
           console.log(error);
         });
     }
-    this.setState({ error: validationContext.validationErrors() });
+    this.setState({ errors: validationContext.validationErrors() });
     console.log(validationContext.validationErrors());
   }
 
@@ -59,13 +59,7 @@ export default class AddPost extends React.Component {
         <div>
           {
           this.state.errors.length
-            ? this.state.errors.map(e => (
-              <h3>
-                {e.name}
-                {' '}
-                is not valid
-              </h3>
-            ))
+            ? this.state.errors.map(e => <h3>{e.name} is not valid</h3>)
             : <h3>No Errors</h3>
         }
         </div>
