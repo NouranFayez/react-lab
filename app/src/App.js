@@ -10,54 +10,47 @@ import DisplayPost from './Components/Posts/display';
 import DisplayUser from './Components/Users/displayUser';
 import CommentPost from './Components/Posts/commentPost';
 import Add from './Components/Posts/add';
-
 import User from './Components/Users/user';
 import UsersList from './Components/Users/list';
 import MovieList from './Components/Movies/List';
 import DisplayUserPost from './Components/Users/displayUserPost';
-// const App = props=> <MovieList data={data}/>;
-// const App = () => <Header/>
-const App = () => (
-    <Router>
-        <>
-            <Switch>
-                <Route path="/posts/:id" component={DisplayPost} />
-                <Route path="/posts" component={PostsList} />
-                <Route path="/users/:id" component={DisplayUser} />
-                <Route path="/users" component={UsersList} />
-                <Route path="/comments/:id" component={CommentPost} />
-                <Route path="/userpost/:id" component={DisplayUserPost}/>
-                <Route path="/add" component={Add} />
 
-                
-                <Route exact path="/" component={Header} />
-                {/* <Route path="/topics" component={Topics} /> */}
-            </Switch>
-        </>
-    </Router >
+import Home from './Components/Home/home'
+////////////  lab 3
+// const App = props=> <MovieList data={data}/>;
+
+
+
+
+
+////////////// lab 4
+// const App = () => (
+//     <Router>
+//         <>
+//         <Header/>
+//             <Switch>
+//                 <Route path="/posts/:id" component={DisplayPost} />
+//                 <Route path="/posts" component={PostsList} />
+//                 <Route path="/users/:id" component={DisplayUser} />
+//                 <Route path="/users" component={UsersList} />
+//                 <Route path="/comments/:id" component={CommentPost} />
+//                 <Route path="/userpost/:id" component={DisplayUserPost}/>
+//                 <Route path="/add" component={Add} />
+//             </Switch>
+//         </>
+//     </Router >
+// )
+
+
+
+
+const App =()=>(
+<>
+<Home/>
+</>
 )
 
 
+
+
 export default App;
-
-// class App extends Component {
-
-//   render() {
-//     const data=data;
-//     return (
-//       <div className="App">
-//  {   data.map(e=> <Movie {...e}/>)}
-
-//      {/* <Movie {...data} /> */}
-//       </div>
-//     );
-//   }
-// }
-
-
-{/* <div>
-            
-            <Header/>
-            <MovieList data={data}/>
-            
-            </div>  */}

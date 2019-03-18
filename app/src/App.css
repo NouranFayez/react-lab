@@ -103,4 +103,17 @@ li{
   color: chocolate;
   font-size: 19px;
 }
-
+.container{
+  text-align: center;
+}
+.home{
+  background-color: whitesmoke;;
+  height: 100%;
+  width: 50%;
+  box-shadow: 4px 3px 3px #aaaaaa;
+  margin-top: 2%;
+  padding: 3%;
+}
+.separator{
+  margin: 3% 0;
+}
