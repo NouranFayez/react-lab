@@ -19,29 +19,29 @@ import Home from './Components/Home/home'
 
 
 ////////////  lab 3
-// const App = props=> <MovieList data={data}/>;
+const App = props=> <MovieList data={data}/>;
 
 
 
 
 
 ////////////// lab 4
-const App = () => (
-    <Router>
-        <>
-        <Header/>
-            <Switch>
-                <Route path="/posts/:id" component={DisplayPost} />
-                <Route path="/posts" component={PostsList} />
-                <Route path="/users/:id" component={DisplayUser} />
-                <Route path="/users" component={UsersList} />
-                <Route path="/comments/:id" component={CommentPost} />
-                <Route path="/userpost/:id" component={DisplayUserPost}/>
-                <Route path="/add" component={Add} />
-            </Switch>
-        </>
-    </Router >
-)
+// const App = () => (
+//     <Router>
+//         <>
+//         <Header/>
+//             <Switch>
+//                 <Route path="/posts/:id" component={DisplayPost} />
+//                 <Route path="/posts" component={PostsList} />
+//                 <Route path="/users/:id" component={DisplayUser} />
+//                 <Route path="/users" component={UsersList} />
+//                 <Route path="/comments/:id" component={CommentPost} />
+//                 <Route path="/userpost/:id" component={DisplayUserPost}/>
+//                 <Route path="/add" component={Add} />
+//             </Switch>
+//         </>
+//     </Router >
+// )
 
 
 
